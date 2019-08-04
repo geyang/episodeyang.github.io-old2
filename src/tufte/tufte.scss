@@ -3,9 +3,7 @@
 /* - source: https://github.com/clayh53/tufte-jekyll
 /* - based on Tufte CSS by Dave Liepmann ( https://github.com/edwardtufte/tufte-css )
 /*****************************************************************************/
-
 // Imports to create final
-
 @import "./fonts";
 @import "./settings";
 @import "./syntax-highlighting";
@@ -39,7 +37,12 @@ html, body {
 
 // MathJax styling
 .mathblock, .MJXc-display {
-  font-size: 1.1rem !important;
+  font-size: 1.2rem !important;
+  clear: left;
+}
+
+.katex {
+  font-size: 1.2rem !important;
   clear: left;
 }
 
@@ -119,6 +122,11 @@ p.subtitle {
   font-size: 1.8rem;
   display: block;
   line-height: 1;
+}
+
+p:not(.subtitle) {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 article {
